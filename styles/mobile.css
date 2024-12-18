@@ -1,0 +1,392 @@
+
+.rules > p{
+    padding-left:40px;
+}
+.roman{
+    list-style: lower-roman;
+}
+.roman li{
+    padding-left:10px;
+    color: rgb(244, 231, 208);
+}
+.businesspartners{
+    color: #861fd5;
+    
+
+}
+header h1 a { 
+    font-size: 60px;
+    color:#dcdae5;
+    text-decoration:dotted ;
+     
+}
+    
+#logo{
+    color:#5c429d;
+    backdrop-filter: grayscale;
+}
+
+h1{
+    color:#f1ebec;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    background-color: rgb(62, 15, 103);
+    margin-bottom: 30px;
+}
+
+
+footer {
+  text-decoration: underline;
+  color: rgb(157, 182, 182);
+  text-align: center;
+  background-color:rgb(48, 45, 45);
+  padding: 2px;
+  margin-top: auto;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(25, 24, 27);
+    border-color: aliceblue;
+}
+
+
+main{
+    flex: 1;
+    background-image:url('images/SHU-Cantor-Building.webp') ;
+
+}
+
+h2 { color: rgb(110, 106, 206);
+    text-align: center;
+    font-size: 40px;
+}
+
+h3{color: #8562df;}
+
+p{
+    color: white;
+}
+
+.facilities{
+    color:rgb(164, 132, 201);
+    padding-left: 100px;
+    padding-right: 0px;
+    padding-top: 5px;
+    border-style:dotted;
+    border-color: antiquewhite;
+    border-width: 8px;
+}
+
+.container {
+    margin: 10px auto;  /* Center the container horizontally with margin auto */
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centers items horizontally */
+    gap: 10px;
+    align-items: center;  /* Centers items vertically */
+}
+
+.container img {
+    max-width: 47%;  /* Limits the maximum width of each image */
+    height: auto;  /* Maintains aspect ratio */
+    object-fit: cover;  /* Ensures the image covers the space without distortion */
+    border-radius: 0px;
+    border: 2px solid antiquewhite;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.container img:hover{
+    transform: scale(1.1);
+}
+
+nav{
+    width:100%;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;    
+}
+
+
+a{
+    position: relative;
+    cursor: pointer;
+    color: rgb(243, 249, 249);
+    font-size: 10px;
+    padding: 0.5rem 1rem;
+    transition: color 0.25s;
+}
+
+a::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background:#3d246d;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 10px;
+}
+
+a:hover{
+    color: #f8f7f9;
+}
+
+a:hover::after{
+    scale: 1 1;
+}
+
+
+.highlight{
+    color:#eaa2a2;
+    font-weight: bold;
+    padding: 10px; 
+}
+
+.contact{
+    color: #312568;
+}
+
+.sidebar{
+    color: #f8f5f5;
+    background:#2b1367;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.textbox{
+        background-color: #1a0838;
+        width: 80%;              
+        padding: 5px;           
+        font-size: 14px;
+        color:#dcdae5;
+        text-align: center;          
+        outline: none;            
+        transition: all 3s ease;
+        border-radius: 4px; 
+        box-shadow: 0 0 40px rgba(201, 197, 206, 0.7);
+        margin: 0 auto;
+    }
+
+.address{
+        color: white;
+        background-color: #0b0b0b;
+        width: 60%;              
+        padding: 10px;           
+        font-size: 15px;
+        text-align: center;          
+        outline: none;            
+        transition: all 3s ease;
+        border: 2px solid #020203;  
+        border-radius: 8px; 
+        box-shadow: 0 0 40px rgba(178, 176, 181, 0.7);
+        margin: 0 auto;
+        margin-bottom: 20px;
+}
+
+.textPad{
+    padding-left: 18px;
+    padding-right: 18px;
+    color: #dcdae5;
+}
+
+
+/* General form container */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000001;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #dfd8e4;
+    font-family:'Times New Roman', Times, serif;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #51358e; /* Change border color on focus */
+    border-width: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #614ae2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Styling for the submit container */
+.submitContainer {
+    margin-top: 20px;               /* Add space above the submit button */
+    text-align: center;             /* Center the button inside the container */
+    padding: 10px;                  /* Add some padding around the button */
+    background-color: #f3f3f3;      /* Light background color */
+    border-radius: 8px;             /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: background-color 0.3s ease;   /* Smooth background color transition */
+}
+
+/* Apply when hovering over the submit container */
+.submitContainer:hover {
+    background-color: #150a0a;      /* Darker shade on hover */
+}
+
+/* Ensuring the submit button fits well in the container */
+.submitContainer input[type="submit"] {
+    background-color: #633ec6;      /* Blue background for the button */
+    color: white;                   /* White text color */
+    padding: 12px 24px;              /* Add padding for better spacing */
+    border: none;                   /* Remove border */
+    border-radius: 4px;             /* Rounded corners */
+    font-size: 16px;                /* Font size of the button text */
+    cursor: pointer;               /* Change cursor to pointer */
+    width: auto;                    /* Let the button adjust to the content width */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Transition for hover and click effects */
+}
+
+/* Apply hover effect on the submit button */
+.submitContainer input[type="submit"]:hover {
+    background-color: #390e8f;      /* Darker blue when hovering */
+    transform: scale(1.05);          /* Slightly enlarge the button on hover */
+}
+
+/* Focus effect on the submit button */
+.submitContainer input[type="submit"]:focus {
+    outline: none;                  /* Remove default focus outline */
+    box-shadow: 0 0 8px rgba(64, 12, 136, 0.8); /* Optional: Add a glow effect */
+}
+
+#quoteDisplay {
+    margin: 20px 0 40px; /* Combined margin for top and bottom */
+    font-size: 21px;
+    font-style: italic; /* Italicize the quote */
+    color: white; /* Change text color to white for better contrast on dark background */
+    background: rgba(255, 255, 255, 0.15); /* More transparent white background for a glass effect */
+    backdrop-filter: blur(15px); /* Increased blur effect for a stronger glass appearance */
+    padding: 15px; /* Padding around the text */
+    border-radius: 12px; /* Slightly increased border radius for a softer look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    display: none; /* Hide by default */
+    text-align: center; /* Center-align the text */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in/fade-out transition */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Subtle border for more definition */
+}
+
+/* Show the quote display when it is revealed */
+#quoteDisplay.show {
+    display: block; /* Show the quote */
+    opacity: 1; /* Fully visible */
+}
+
+/* Table Container */
+.table-container {
+    background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent dark background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    padding: 20px; /* Padding around the table */
+    margin: 20px auto; /* Center the container */
+    width: 80%; /* Width of the table container */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Merge borders */
+}
+
+/* Header Styles */
+th {
+    background-color: rgba(100, 100, 100, 0.7); /* Semi-transparent background */
+    color: #f1ebec; /* Light text color */
+    padding: 15px; /* Padding for header cells */
+    text-align: right; /* Align text to the right */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Light border at the bottom */
+}
+
+/* Cell Styles */
+td {
+    background-color: rgba(50, 50, 50, 0.7); /* Semi-transparent background for cells */
+    color: #dcdae5; /* Light text color */
+    padding: 12px; /* Padding for cells */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light border at the bottom */
+    text-align: right; /* Align text to the right */
+}
+
+/* Hover Effect for Rows */
+tr:hover {
+    background-color: rgba(239, 235, 242, 0.1); /* Light hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* Make each element a block */
+    }
+    th {
+        display: none; /* Hide header on small screens */
+    }
+    tr {
+        margin-bottom: 15px; /* Space between rows */
+    }
+    td {
+        text-align: right; /* Align text to the right */
+        position: relative; /* Position for pseudo-elements */
+        padding-left: 50%; /* Space for labels */
+    }
+    td::before {
+        content: attr(data-label); /* Use data-label for responsive design */
+        position: absolute; /* Position absolutely */
+        left: 0; /* Align to the left */
+        width: 50%; /* Width of label */
+        padding-left: 10px; /* Padding for label */
+        font-weight: bold; /* Bold label */
+        text-align: left; /* Align label to the left */
+        color: #f1ebec; /* Label color */
+    }
+}
